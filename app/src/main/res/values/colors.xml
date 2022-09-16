@@ -12,4 +12,12 @@
     <color name="colorFB">#4165B1</color>
     <color name="colorGoogle">#1FB124</color>
 
+
+    <color name="PrimaryColor">#FBDA05</color>
+    <color name="PrimaryDarkColor">#B89F02</color>
+    <color name="AccColor">#13E8D3</color>
+
+    <color name="yellow">#F4D408</color>
+    <color name="red">#DC0000</color>
+
 </resources>
