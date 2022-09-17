@@ -5,11 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".OrderActivity">
+    tools:context=".Food_list_User">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/orderRecyclerView"
+        android:id="@+id/recycleview_foodlist_User"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/order_sample" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:listitem="@layout/sample_foodlist_user"/>
 </LinearLayout>
