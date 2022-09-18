@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Toast.makeText(MainActivity.this, "Food List!", Toast.LENGTH_SHORT).show();
-                Intent intent= new Intent(MainActivity.this,OrderActivity.class);
+                Intent intent= new Intent(MainActivity.this,Food_list.class);
                 startActivity(intent);
 
             }

@@ -22,12 +22,12 @@ public class OrderActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         ArrayList<OrdersModel> list = new ArrayList<>();
-        list.add(new OrdersModel(R.drawable.fc,"French Fries","120","124" ));
+        list.add(new OrdersModel(R.drawable.ff,"French Fries","120","124" ));
         list.add(new OrdersModel(R.drawable.biryani,"Biryani","200","120" ));
-        list.add(new OrdersModel(R.drawable.fc,"French Fries","120","125" ));
+        list.add(new OrdersModel(R.drawable.ff,"French Fries","120","125" ));
         list.add(new OrdersModel(R.drawable.burger,"burger","180","234" ));
         list.add(new OrdersModel(R.drawable.biryani,"Biryani","200","114" ));
-        list.add(new OrdersModel(R.drawable.fc,"French Fries","120","154" ));
+        list.add(new OrdersModel(R.drawable.ff,"French Fries","120","154" ));
         list.add(new OrdersModel(R.drawable.pizza,"pizza","200","424" ));
         list.add(new OrdersModel(R.drawable.burger,"burger","180","210" ));
         list.add(new OrdersModel(R.drawable.pizza,"pizza","200","524" ));
