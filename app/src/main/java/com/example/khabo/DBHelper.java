@@ -62,7 +62,7 @@ public class DBHelper extends SQLiteOpenHelper {
         else
             return false;
     }
-    public boolean insertOrder(String name,String phone,int price,int image,String foodname,int quantity){
+    public boolean insertOrder(String name,String phone,int price,int image,String foodname){
         SQLiteDatabase database=this.getReadableDatabase();
         ContentValues values = new ContentValues();
         values.put("name",name);
@@ -70,7 +70,6 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put("price",price);
         values.put("image",image);
         values.put("foodname",foodname);
-        values.put("quantity",quantity);
 
         long id=database.insert("orders",null,values);
         if(id<=0){

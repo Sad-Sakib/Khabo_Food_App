@@ -1,6 +1,8 @@
 package com.example.khabo.Adapters;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.khabo.DBHelper;
 import com.example.khabo.DetailOrderActivity;
+import com.example.khabo.MainActivity;
 import com.example.khabo.Models.OrdersModel;
 import com.example.khabo.R;
 
@@ -44,15 +47,40 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.viewHolder
         holder.orderNumber.setText(model.getOrderNumber());
         holder.price.setText(model.getPrice());
 
+//        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+//            @Override
+//            public boolean onLongClick(View v) {
+//                DBHelper helper=new DBHelper(context);
+//                if(helper.deleteOrder(model.getOrderNumber())>0){
+//                    Toast.makeText(context, "Deleted", Toast.LENGTH_SHORT).show();
+//                }else{
+//                    Toast.makeText(context, "Error", Toast.LENGTH_SHORT).show();
+//                }
+//                return false;
+//            }
+//        });
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                DBHelper helper=new DBHelper(context);
-                if(helper.deleteOrder(model.getOrderNumber())>0){
-                    Toast.makeText(context, "Deleted", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(context, "Error", Toast.LENGTH_SHORT).show();
-                }
+                new AlertDialog.Builder(context)
+                        .setTitle("Delete Item")
+                        .setMessage("Are you sure to delete this item?")
+                        .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                DBHelper helper=new DBHelper(context);
+                                if(helper.deleteOrder(model.getOrderNumber())>0){
+                                   Toast.makeText(context, "Deleted", Toast.LENGTH_SHORT).show();
+                                } else {
+                                    Toast.makeText(context, "Error", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                            }
+                        }).show();
                 return false;
             }
         });

@@ -38,8 +38,7 @@ public class DetailOrderActivity extends AppCompatActivity {
                         binding.phoneBox.getText().toString(),
                         price,
                         image,
-                        name,
-                        Integer.parseInt(binding.quantity.getText().toString())
+                        name
                 );
                 if(isInserted)
                     Toast.makeText(DetailOrderActivity.this, "Data inserted", Toast.LENGTH_SHORT).show();
