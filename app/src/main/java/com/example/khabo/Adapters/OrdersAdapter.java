@@ -47,18 +47,6 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.viewHolder
         holder.orderNumber.setText(model.getOrderNumber());
         holder.price.setText(model.getPrice());
 
-//        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
-//            @Override
-//            public boolean onLongClick(View v) {
-//                DBHelper helper=new DBHelper(context);
-//                if(helper.deleteOrder(model.getOrderNumber())>0){
-//                    Toast.makeText(context, "Deleted", Toast.LENGTH_SHORT).show();
-//                }else{
-//                    Toast.makeText(context, "Error", Toast.LENGTH_SHORT).show();
-//                }
-//                return false;
-//            }
-//        });
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
