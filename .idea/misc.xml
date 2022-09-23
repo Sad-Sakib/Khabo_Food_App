@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/11th trimester/Mobile Application Development/MAD_Project/app/src/main/res/drawable/btn_gradient.xml" value="0.1825" />
+        <entry key="..\:/11th trimester/Mobile Application Development/MAD_Project/app/src/main/res/layout/activity_detail_order.xml" value="0.22826086956521738" />
         <entry key="..\:/11th trimester/Mobile Application Development/MAD_Project/app/src/main/res/layout/activity_food_list.xml" value="0.25416666666666665" />
         <entry key="..\:/11th trimester/Mobile Application Development/MAD_Project/app/src/main/res/layout/activity_food_list_user.xml" value="0.22826086956521738" />
         <entry key="..\:/11th trimester/Mobile Application Development/MAD_Project/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
@@ -13,6 +14,7 @@
         <entry key="..\:/11th trimester/Mobile Application Development/MAD_Project/app/src/main/res/layout/order_sample.xml" value="0.2" />
         <entry key="..\:/11th trimester/Mobile Application Development/MAD_Project/app/src/main/res/layout/sample_foodlist.xml" value="0.2" />
         <entry key="..\:/11th trimester/Mobile Application Development/MAD_Project/app/src/main/res/layout/sample_foodlist_user.xml" value="0.22826086956521738" />
+        <entry key="..\:/11th trimester/Mobile Application Development/MAD_Project/app/src/main/res/menu/menu.xml" value="0.18984375" />
       </map>
     </option>
   </component>

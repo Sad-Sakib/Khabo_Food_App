@@ -1,5 +1,6 @@
 package com.example.khabo.Adapters;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.khabo.DetailOrderActivity;
 import com.example.khabo.Models.FoodModelUser;
 import com.example.khabo.R;
 
@@ -36,6 +38,18 @@ public class FoodAdapterUser extends RecyclerView.Adapter<FoodAdapterUser.viewho
         holder.fdimage.setImageResource(model.getImage());
         holder.name.setText(model.getName());
         holder.price.setText(model.getPrice());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context, DetailOrderActivity.class);
+                intent.putExtra("image",model.getImage());
+                intent.putExtra("price",model.getPrice());
+                intent.putExtra("name",model.getName());
+                context.startActivity(intent);
+            }
+        });
+
 
     }
 
