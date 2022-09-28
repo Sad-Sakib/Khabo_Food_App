@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
         android:orientation="vertical">
@@ -57,11 +57,84 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="8dp"
+            android:padding="5dp"
             android:text="Skip"
-            android:textColor="#FFFFFF"
+            android:textColor="#0097A7"
             android:textSize="18sp"
             android:textStyle="bold" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="13dp" />
+
+        <TextView
+            android:id="@+id/madeBy"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" Made By: "
+            android:textColor="#F8F7F7"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="111dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/img_1" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Abdullah Al Mamun "
+            android:textColor="#F8F7F7"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="011 191 104"
+            android:textColor="#F3F0F0"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="111dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/img" />
+
+
+        <TextView
+            android:id="@+id/sadman"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sadman Sakib"
+            android:textColor="#F8F7F7"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SadmanID"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="011 191 097"
+            android:textColor="#F3F0F0"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
 

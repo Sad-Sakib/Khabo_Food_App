@@ -47,6 +47,7 @@ public class DetailOrderActivity extends AppCompatActivity {
 
             }
         });
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
