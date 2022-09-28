@@ -106,4 +106,9 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase database=this.getWritableDatabase();
         return database.delete("orders","id="+id,null);
     }
+    public Cursor getUser(){
+        SQLiteDatabase db= this.getReadableDatabase();
+        Cursor cursor= db.rawQuery("Select * from users", null);
+        return  cursor;
+    }
 }

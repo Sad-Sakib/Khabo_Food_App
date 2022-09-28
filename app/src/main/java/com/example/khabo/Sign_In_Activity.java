@@ -40,7 +40,7 @@ public class Sign_In_Activity extends AppCompatActivity {
                     Boolean checkuserpass=DB.checkusernamepassword(name,pass);
                         if(checkuserpass==true){
                             Toast.makeText(Sign_In_Activity.this, "Sign in successfully", Toast.LENGTH_SHORT).show();
-                            Intent intent= new Intent(getApplicationContext(),Food_list_User.class);
+                            Intent intent= new Intent(getApplicationContext(),HomeActivity.class);
                             startActivity(intent);
                         }else{
                             Toast.makeText(Sign_In_Activity.this, "Invalid User Info", Toast.LENGTH_SHORT).show();
