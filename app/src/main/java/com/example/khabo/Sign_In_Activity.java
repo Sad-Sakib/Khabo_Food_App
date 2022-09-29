@@ -3,6 +3,7 @@ package com.example.khabo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -34,6 +35,15 @@ public class Sign_In_Activity extends AppCompatActivity {
                 String name=username.getText().toString();
                 String pass=userpassword.getText().toString();
 
+                //SharePreference part starts
+                SharedPreferences sharedPreferences= getSharedPreferences("login", MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("Username",name);
+                editor.apply();
+                username.setText(name);
+                //SharePreference part ends
+
+
                 if(name.equals("")||pass.equals(""))
                     Toast.makeText(Sign_In_Activity.this, "Fillup all the box", Toast.LENGTH_SHORT).show();
                 else{
@@ -49,6 +59,12 @@ public class Sign_In_Activity extends AppCompatActivity {
 
             }
         });
+
+        //Get the value of shared preference
+        SharedPreferences getSharedPreferences= getSharedPreferences("login", MODE_PRIVATE);
+        String value= getSharedPreferences.getString("Username"," ");
+        username.setText(value);
+
 
         newAcc=findViewById(R.id.newAcc);
         newAcc.setOnClickListener(new View.OnClickListener() {
