@@ -3,6 +3,7 @@ package com.example.khabo;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.os.Build;
 import android.os.Bundle;
 
 import com.example.khabo.Adapters.OrdersAdapter;
@@ -14,6 +15,8 @@ import java.util.ArrayList;
 public class OrderActivity extends AppCompatActivity {
 
     ActivityOrderBinding binding;
+
+    //Notification Channel for getter than oreo version
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
