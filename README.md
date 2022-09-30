@@ -1,6 +1,6 @@
-Project Completed By:
-Abdullah Al Mamun - 011 191 104
-      And
+<h3>Project Completed By:</h3>
+Abdullah Al Mamun - 011 191 104 
+&
 Sadman Sakib - 011 191 097
 
 <h1>Completed Task</h1>
